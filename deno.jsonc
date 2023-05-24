@@ -1,0 +1,15 @@
+{
+    "imports": {
+        "sha1/": "https://deno.land/x/sha1@v1.0.3/",
+        "std/": "https://deno.land/std@0.188.0/"
+    },
+    "tasks": {
+        "run": "deno run --allow-read=./config.json --allow-write=./config.json --allow-net",
+        "check_in": "deno run --allow-read=./config.json --allow-write=./config.json --allow-net main.ts c",
+        "login": "deno run --allow-read=./config.json --allow-write=./config.json --allow-net main.ts l"
+    },
+    "fmt": {
+        "indentWidth": 4,
+        "exclude": ["config.json"]
+    }
+}
