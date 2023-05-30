@@ -10,6 +10,23 @@
     "https://deno.land/x/base64@v0.2.1/base64url.ts": "18bbf879b31f1f32cca8adaa2b6885ae325c2cec6a66c5817b684ca12c46ad5e",
     "https://deno.land/x/sha1@v1.0.3/deps.ts": "2e1af51a48c8507017fdb057b950366601b177fb7e73d5de54c1b3e0e115d72e",
     "https://deno.land/x/sha1@v1.0.3/mod.ts": "146a101c9776cc9c807053c93f23e4b321ade5251f65745df418f4a75d5fd27b",
-    "https://denopkg.com/chiefbiiko/std-encoding@v1.0.0/mod.ts": "4a927e5cd1d9b080d72881eb285b3b94edb6dadc1828aeb194117645f4481ac0"
+    "https://denopkg.com/chiefbiiko/std-encoding@v1.0.0/mod.ts": "4a927e5cd1d9b080d72881eb285b3b94edb6dadc1828aeb194117645f4481ac0",
+    "https://esm.sh/lodash.round@4.0.4": "cff074d268befbba9c58300f225cb02b8e589dd47be9095e92ce628bf51443b9",
+    "https://esm.sh/v124/@types/lodash.round@4.0.7/index.d.ts": "779a4a4279b7f02653c9b7bdab5ef553f13db92788bef449afa49b4a9d86fd0b",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/array.d.ts": "458111fc89d11d2151277c822dfdc1a28fa5b6b2493cf942e37d4cd0a6ee5f22",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/collection.d.ts": "d70c026dd2eeaa974f430ea229230a1897fdb897dc74659deebe2afd4feeb08f",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/common.d.ts": "675e702f2032766a91eeadee64f51014c64688525da99dccd8178f0c599f13a8",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/date.d.ts": "187119ff4f9553676a884e296089e131e8cc01691c546273b1d0089c3533ce42",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/function.d.ts": "febf0b2de54781102b00f61653b21377390a048fbf5262718c91860d11ff34a6",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/lang.d.ts": "98f9d826db9cd99d27a01a59ee5f22863df00ccf1aaf43e1d7db80ebf716f7c3",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/math.d.ts": "0aaef8cded245bf5036a7a40b65622dd6c4da71f7a35343112edbe112b348a1e",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/number.d.ts": "00baffbe8a2f2e4875367479489b5d43b5fc1429ecb4a4cc98cfc3009095f52a",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/object.d.ts": "dcd91d3b697cb650b95db5471189b99815af5db2a1cd28760f91e0b12ede8ed5",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/seq.d.ts": "3c92b6dfd43cc1c2485d9eba5ff0b74a19bb8725b692773ef1d66dac48cda4bd",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/string.d.ts": "3cf0d343c2276842a5b617f22ba82af6322c7cfe8bb52238ffc0c491a3c21019",
+    "https://esm.sh/v124/@types/lodash@4.14.194/common/util.d.ts": "df996e25faa505f85aeb294d15ebe61b399cf1d1e49959cdfaf2cc0815c203f9",
+    "https://esm.sh/v124/@types/lodash@4.14.194/index.d.ts": "f2eff8704452659641164876c1ef0df4174659ce7311b0665798ea3f556fa9ad",
+    "https://esm.sh/v124/@types/lodash@4.14.194/index~.d.ts": "f2eff8704452659641164876c1ef0df4174659ce7311b0665798ea3f556fa9ad",
+    "https://esm.sh/v124/lodash.round@4.0.4/deno/lodash.round.mjs": "ccb995936434f5310194e95fa73aba8fc2249602aa4627a798baf3414e47f6db"
   }
 }

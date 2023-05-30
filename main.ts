@@ -2,6 +2,7 @@ import { parse } from "std/flags/mod.ts";
 import { load_settings } from "./config.ts";
 import { Client } from "./client.ts";
 import { ask_prompt } from "./utils.ts";
+import round from "lodash.round";
 
 enum CMD {
     Unknown,
@@ -39,6 +40,7 @@ async function login() {
     const status = await c.loginCheck();
     settings.token = status.token;
     await settings.save(args.config);
+    console.log("登录成功。");
 }
 
 async function checkin() {
@@ -47,8 +49,19 @@ async function checkin() {
     console.log("按钮名称：", i.buttonname);
     console.log("列表内容：", i.signlist);
     const cfg = settings;
+    const latitude = round(
+        parseFloat(cfg.latitude) + (Math.random() - 0.5) * cfg.latitude_radius,
+        6,
+    );
+    const longitude = round(
+        parseFloat(cfg.longitude) +
+            (Math.random() - 0.5) * cfg.longitude_radius,
+        6,
+    );
+    console.log(`位置： ${longitude}, ${latitude}`);
+    console.log(cfg.localname);
     if (!ask_prompt("打卡吗？(y/n)")) return;
-    await c.checkIn(cfg.latitude, cfg.longitude, cfg.localname);
+    await c.checkIn(latitude.toString(), longitude.toString(), cfg.localname);
     console.log("打卡成功！");
 }
 

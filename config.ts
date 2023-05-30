@@ -51,6 +51,9 @@ export class Config {
         if (!t) throw Error("latitude not exists.");
         return t.toString();
     }
+    get latitude_radius() {
+        return this._return_number("latitude_radius") || 0.00001;
+    }
     get localname() {
         const t = this._return_string("localname");
         if (!t) throw Error("localname not exists.");
@@ -60,6 +63,9 @@ export class Config {
         const t = this._return_number("longitude");
         if (!t) throw Error("longitude not exists.");
         return t.toString();
+    }
+    get longitude_radius() {
+        return this._return_number("longitude_radius") || 0.00001;
     }
     get password() {
         const t = this._return_string("password");

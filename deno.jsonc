@@ -1,5 +1,6 @@
 {
     "imports": {
+        "lodash.round": "https://esm.sh/lodash.round@4.0.4",
         "sha1/": "https://deno.land/x/sha1@v1.0.3/",
         "std/": "https://deno.land/std@0.188.0/"
     },
