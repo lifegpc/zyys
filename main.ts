@@ -1,6 +1,7 @@
 import { parse } from "std/flags/mod.ts";
 import { load_settings } from "./config.ts";
 import { Client } from "./client.ts";
+import { ask_prompt } from "./utils.ts";
 
 enum CMD {
     Unknown,
@@ -46,8 +47,9 @@ async function checkin() {
     console.log("按钮名称：", i.buttonname);
     console.log("列表内容：", i.signlist);
     const cfg = settings;
-    const r = await c.checkIn(cfg.latitude, cfg.longitude, cfg.localname);
-    console.log(r);
+    if (!ask_prompt("打卡吗？(y/n)")) return;
+    await c.checkIn(cfg.latitude, cfg.longitude, cfg.localname);
+    console.log("打卡成功！");
 }
 
 async function main() {
