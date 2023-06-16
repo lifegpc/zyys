@@ -2,7 +2,7 @@ import { JsonValue, parse } from "std/jsonc/mod.ts";
 
 export class Config {
     _data;
-    constructor(data: JsonValue) {
+    constructor(data: JsonValue | Record<string, unknown>) {
         this._data = <{ [x: string]: unknown }> <unknown> Object.assign(
             {},
             data,
@@ -87,6 +87,12 @@ export class Config {
     }
     set train_url(s) {
         this._data.train_url = s;
+    }
+    get name() {
+        return this._return_string("name");
+    }
+    set name(s) {
+        this._data.name = s;
     }
     save(path: string, signal?: AbortSignal) {
         return Deno.writeTextFile(path, JSON.stringify(this._data), { signal });

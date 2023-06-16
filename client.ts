@@ -58,7 +58,7 @@ export class Client {
     readonly software = "0";
     readonly myshop_forapp_key = "987654321";
     readonly logindevicetype = "android";
-    readonly fromteacher = "0";
+    fromteacher = "0";
     readonly fromandorid = "1";
     readonly version = "131";
     readonly deviceid = `设备Id获取失败,null值!版本\u003d${this.version}`;

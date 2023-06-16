@@ -9,3 +9,11 @@ export function ask_prompt(message?: string): boolean {
         }
     }
 }
+
+export function sleep(time: number): Promise<undefined> {
+    return new Promise((r) => {
+        setTimeout(() => {
+            r(undefined);
+        }, time);
+    });
+}
