@@ -41,6 +41,8 @@ async function login() {
     settings.train_url = d.clouddoctortrainurl;
     const status = await c.loginCheck();
     settings.token = status.token;
+    settings.id = status.personid;
+    settings.name = status.personname;
     await settings.save(args.config);
     console.log("登录成功。");
 }

@@ -46,6 +46,9 @@ export class Config {
         if (!t) throw Error("id not exists.");
         return t;
     }
+    set id(s) {
+        this._data.id = s;
+    }
     get latitude() {
         const t = this._return_number("latitude");
         if (!t) throw Error("latitude not exists.");
